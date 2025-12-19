@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Turbolader Projekt</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #f4f4f4;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Kontakt-Menü ZENTRIERT Styling */
+        .nav {
+            position: fixed;
+            top: 15px;
+            left: 50%; /* Schiebt das Element zur Mitte */
+            transform: translateX(-50%); /* Zentriert es exakt */
+            z-index: 1000;
+        }
+        .nav-btn {
+            background: #00d4ff;
+            color: #1a1a1a;
+            padding: 8px 25px; /* Etwas breiterer Button */
+            border-radius: 20px; /* Abgerundeter Look */
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+        .nav-btn:hover { 
+            background: #fff; 
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+        }
+        .nav-links {
+            display: none;
+            position: absolute;
+            background: #2a2a2a;
+            padding: 15px;
+            border: 1px solid #00d4ff;
+            border-radius: 8px;
+            top: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 180px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+            text-align: center;
+        }
+        .nav:hover .nav-links { display: block; }
+        .nav-links a {
+            color: #00d4ff;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+            font-size: 1rem;
+        }
+        .nav-links a:hover { color: #fff; }
+
+        header { text-align: center; margin-bottom: 40px; margin-top: 70px; }
+        h1 { color: #00d4ff; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1100px;
+        }
+        .product-card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 3px solid #00d4ff;
+        }
+        .caption { padding: 20px; text-align: center; }
+        .caption h3 { margin: 0 0 10px 0; color: #00d4ff; }
+        .caption p { font-size: 0.95rem; color: #ccc; }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="nav-btn">KONTAKT</div>
+        <div class="nav-links">
+            <a href="https://www.instagram.com/moritz_n0" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/moritz-nonn-290801316?originalSubdomain=de"> LinkedIn </a>
+        </div>
+    </div>
+    
+    <header>
+        <h1>-Unser E-Turbolader-</h1>
+        <p>Projekt der Rheinischen Hochschule | Technisches Projektmanagement | Ralf Thümler</p>
+    </header>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="Cad12.png" alt="Bild 1">
+            <div class="caption">
+                <h3>UNSER PROTOTYP</h3>
+                <p>Wir haben bei unserem Prototyp bewusst darauf geachtet die Elektronik separat am Turbo anzubauen, um unser Budget einzuhalten</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="TPM3.avif" alt="Bild 2">
+            <div class="caption">
+                <h3>FASZINATION E-TURBOLADER</h3>
+                <p>Der E-Turbolader eliminiert das klassische „Turbolader-Loch“, da er durch den Elektromotor unabhängig vom Abgasstrom sofort anspricht und maximalen Ladedruck bei jeder Drehzahl liefert. Damit vereint er die brachiale Kraft eines Turbos mit der blitzschnellen Reaktion eines Saugmotors für maximale Effizienz und Fahrspaß.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="TMP2.png" alt="Bild 3">
+            <div class="caption">
+                <h3>FÜR DIE UMWELT</h3>
+                <p>Weniger Emissionen, schütze die Natur! Durch die elektrische Unterstützung optimiert der E-Turbolader die Verbrennung im Motor bereits bei niedrigen Drehzahlen, was den Kraftstoffverbrauch und den CO2-Ausstoß deutlich senkt. Zudem ermöglicht er ein effizientes „Downsizing“ der Motoren, ohne dabei an Leistung einzubüßen, wodurch Ressourcen geschont und Schadstoffemissionen reduziert werden.
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="TPM4.jpg" alt="Bild 4">
+            <div class="caption">
+                <h3>GÜNSTIG FÜR DIE MITTELKLASSE</h3>
+                <p>Unser Prinzip beruht darauf, das Erlebnis E-Turbolader für jeden zu ermöglichen. Ein günstiger E-Turbo demokratisiert den Zugang zu effizienter, emissionsarmer Motorentechnologie und beschleunigt so die Mobilitätswende durch eine breitere Marktakzeptanz.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
